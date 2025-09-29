@@ -1,5 +1,5 @@
-# panaram_genirator
-Генирация панарамы
+# panaram_generator
+Генерация панарамы
 
 ### Запуск
 ```
