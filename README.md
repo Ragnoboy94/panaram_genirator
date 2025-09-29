@@ -1,16 +1,16 @@
 # panaram_generator
-Генерация панарамы
+Генерация панорамы
 
 ### Запуск
 ```
 docker build -t panorama-maker .
-docker run -d -p 8000:8000 --name panorama panorama-maker
+docker run -d -p 8060:8060 --name panorama panorama-maker
 ```
 
 ### Запрос из PHP
 
 ```
-$ch = curl_init("http://localhost:8000/stitch");
+$ch = curl_init("http://localhost:8060/stitch");
 $data = [
     'left' => new CURLFile('/path/to/left.jpg'),
     'center' => new CURLFile('/path/to/center.jpg'),
